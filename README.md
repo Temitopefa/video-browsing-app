@@ -1,54 +1,82 @@
-<<<<<<< HEAD
-# video-browsing-app
-=======
-# React + TypeScript + Vite
+# Video Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple video application built with React that allows users to search for videos, view details, like videos, and load more videos dynamically. The application is designed with accessibility in mind, ensuring that all users can navigate and interact with the content effectively.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search for videos by title or genre.
+- View video details, including a video player, description, and like functionality.
+- Load more videos dynamically.
+- Accessible design with keyboard navigation and ARIA roles.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- TypeScript
+- React Player
+- Tailwind CSS (for styling)
+- Fetch API (for data retrieval)
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Prerequisites
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Make sure you have the following installed on your machine:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- Node.js (version 14 or higher)
+- npm (Node Package Manager)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
->>>>>>> 3da22834fea2e5838b6850bd3477cb7f5512ba58
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Temitopefa/video-browsing-app.git
+
+2. Navigate to the project directory:
+
+  cd video-browsing-app
+
+3. Install the dependencies:
+
+  npm install
+
+Running the Application
+To start the development server, run:
+
+npm run dev
+
+Building for Production
+To create a production build of the application, run:
+
+bash
+
+npm run build
+This will create an optimized build in the build directory.
+
+Usage
+
+Use the search bar to find videos by title or genre.
+Click on a video to view its details and play it.
+Click the "Like" button to like a video.
+Click "Load More" to load additional videos.
+
+Accessibility
+
+This application has been designed with accessibility in mind. It includes:
+
+Keyboard navigation support.
+ARIA roles and attributes for screen readers.
+Sufficient color contrast for readability.
+
+Contributing
+Contributions are welcome! If you have suggestions for improvements or features, please open an issue or submit a pull request.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Acknowledgments
+React - A JavaScript library for building user interfaces.
+React Player - A React component for playing videos.
+Tailwind CSS - A utility-first CSS framework for styling.
+
